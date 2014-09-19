@@ -17,6 +17,7 @@
 
   <!-- Add your CSS styles to the following file -->
   <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
+  <link href="../Content/bootstrap.cosmo.min.css" rel="stylesheet" />
 
   <!-- Add your JavaScript to the following file -->
   <script type="text/javascript" src="../Scripts/App.js"></script>
@@ -29,12 +30,18 @@
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-
-  <div id="appRoot"></div>
+  <div id="app-root"></div>
   
   <script type="text/x-handlebars">
-    {{outlet}}
-    {{outlet modal}}
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Meetup for SharePoint</h1>
+      <hr />
+      {{outlet}}
+    </div>
+  </div>
+
+  {{outlet modal}}
   </script>
 
 </asp:Content>
