@@ -11,8 +11,8 @@
   <script type="text/javascript" src="../Scripts/jquery-1.9.1.min.js"></script>
   <script type="text/javascript" src="/_layouts/15/sp.runtime.js"></script>
   <script type="text/javascript" src="/_layouts/15/sp.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.7.0/ember.js"></script>
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.7.0/ember.js"></script>
   <meta name="WebPartPageExpansion" content="full" />
 
   <!-- Add your CSS styles to the following file -->
@@ -25,23 +25,25 @@
 
 <%-- The markup in the following Content element will be placed in the TitleArea of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-  Page Title
+  Meetup for SharePoint
 </asp:Content>
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-  <div id="app-root"></div>
-  
-  <script type="text/x-handlebars">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Meetup for SharePoint</h1>
-      <hr />
-      {{outlet}}
+  <div id="app-root">
+    <div class="container" style="margin-left: 185px; margin-top: 30px;">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Testing...</h1>
+        </div>
+      </div>
     </div>
   </div>
 
-  {{outlet modal}}
+  <script type="text/x-handlebars">
+    {{outlet}}
+
+    {{outlet modal}}
   </script>
 
 </asp:Content>

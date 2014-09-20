@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 window.MeetupSP = Ember.Application.create({
-  rootelement: "#app-root"
+  rootElement: "#app-root"
 });
 
 MeetupSP.MyModalComponent = Ember.Component.extend({
