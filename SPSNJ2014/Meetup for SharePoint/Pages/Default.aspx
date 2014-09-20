@@ -30,20 +30,62 @@
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-  <div id="app-root">
-    <div class="container" style="margin-left: 185px; margin-top: 30px;">
-      <div class="row">
-        <div class="col-md-12">
-          <h1>Testing...</h1>
-        </div>
-      </div>
-    </div>
+  <div style="padding-left: 185px; margin-top: 50px; overflow-x: hidden">
+    <div id="app-root" class="container"></div>
   </div>
 
   <script type="text/x-handlebars">
     {{outlet}}
 
     {{outlet modal}}
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="index">
+    <div class="row">
+      <div class="col-md-9">
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <input type="text" class="form-control" id="radiusInput" placeholder="radius (miles, default 30)" style="width: 250px"/>
+          </div>
+          <button class="btn btn-default">Search</button>
+        </form>
+        <div id="searchResults" class="">
+          <div class="meetupresult">
+            <img class="img-circle col-md-2" src="http://placekitten.com/111/111" />
+            <div class="col-md-9">
+              <h3><a>Meetup Title</a></h3>
+              <p>Bacon ipsum dolor sit amet rump t-bone ground round, cow venison pig pork loin strip steak chicken bresaola fatback brisket short ribs tri-tip. Ground round short ribs turducken pastrami shoulder. Capicola frankfurter jowl bacon beef ribs. Pork prosciutto beef turkey filet mignon ham short loin salami spare ribs bacon leberkas. Bresaola brisket sausage ribeye. Turducken biltong ball tip rump shoulder pastrami, prosciutto bacon meatball leberkas boudin pork loin.</p>
+              <h4><i>Next Meetup:</i> <a>Next meetup title goes here</a></h4>
+            </div>
+          </div>
+          <div class="meetupresult">
+            <img class="img-circle col-md-2" src="http://placekitten.com/111/111" />
+            <div class="col-md-9">
+              <h3><a>Meetup Title</a></h3>
+              <p>Bacon ipsum dolor sit amet rump t-bone ground round, cow venison pig pork loin strip steak chicken bresaola fatback brisket short ribs tri-tip. Ground round short ribs turducken pastrami shoulder. Capicola frankfurter jowl bacon beef ribs. Pork prosciutto beef turkey filet mignon ham short loin salami spare ribs bacon leberkas. Bresaola brisket sausage ribeye. Turducken biltong ball tip rump shoulder pastrami, prosciutto bacon meatball leberkas boudin pork loin.</p>
+              <h4><i>Next Meetup:</i> <a>Next meetup title goes here</a></h4>
+            </div>
+          </div>
+          <div class="meetupresult">
+            <img class="img-circle col-md-2" src="http://placekitten.com/111/111" />
+            <div class="col-md-9">
+              <h3><a>Meetup Title</a></h3>
+              <p>Bacon ipsum dolor sit amet rump t-bone ground round, cow venison pig pork loin strip steak chicken bresaola fatback brisket short ribs tri-tip. Ground round short ribs turducken pastrami shoulder. Capicola frankfurter jowl bacon beef ribs. Pork prosciutto beef turkey filet mignon ham short loin salami spare ribs bacon leberkas. Bresaola brisket sausage ribeye. Turducken biltong ball tip rump shoulder pastrami, prosciutto bacon meatball leberkas boudin pork loin.</p>
+              <h4><i>Next Meetup:</i> <a>Next meetup title goes here</a></h4>
+            </div>
+          </div>
+          <div class="meetupresult">
+            <img class="img-circle col-md-2" src="http://placekitten.com/111/111" />
+            <div class="col-md-9">
+              <h3><a>Meetup Title</a></h3>
+              <p>Bacon ipsum dolor sit amet rump t-bone ground round, cow venison pig pork loin strip steak chicken bresaola fatback brisket short ribs tri-tip. Ground round short ribs turducken pastrami shoulder. Capicola frankfurter jowl bacon beef ribs. Pork prosciutto beef turkey filet mignon ham short loin salami spare ribs bacon leberkas. Bresaola brisket sausage ribeye. Turducken biltong ball tip rump shoulder pastrami, prosciutto bacon meatball leberkas boudin pork loin.</p>
+              <h4><i>Next Meetup:</i> <a>Next meetup title goes here</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </script>
 
 </asp:Content>
