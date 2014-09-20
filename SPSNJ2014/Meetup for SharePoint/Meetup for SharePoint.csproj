@@ -55,6 +55,7 @@
     <None Include="Scripts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9375e4ab-ff47-40c9-832f-a35807c0f317}</SharePointProjectItemId>
     </None>
+    <Content Include="Scripts\controllers\MeetupModalController.js" />
     <Content Include="Scripts\Elements.xml" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\ember.js" />
@@ -62,6 +63,7 @@
     <Content Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\routes\IndexRoute.js" />
     <Content Include="Scripts\_references.js" />
   </ItemGroup>
   <ItemGroup>
@@ -100,7 +102,6 @@
     </AppManifestFile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Scripts\controllers\" />
     <Folder Include="Scripts\views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

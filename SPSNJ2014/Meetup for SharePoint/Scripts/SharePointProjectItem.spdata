@@ -10,5 +10,7 @@
     <ProjectItemFile Source="ember.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="handlebars-v1.3.0.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="SPapp.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="routes\IndexRoute.js" Target="Scripts\routes\" Type="ElementFile" />
+    <ProjectItemFile Source="controllers\MeetupModalController.js" Target="Scripts\controllers\" Type="ElementFile" />
   </Files>
 </ProjectItem>

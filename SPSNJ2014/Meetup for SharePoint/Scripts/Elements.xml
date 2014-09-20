@@ -9,5 +9,7 @@
     <File Path="Scripts\ember.js" Url="Scripts/ember.js" ReplaceContent="TRUE" />
     <File Path="Scripts\handlebars-v1.3.0.js" Url="Scripts/handlebars-v1.3.0.js" ReplaceContent="TRUE" />
     <File Path="Scripts\SPapp.js" Url="Scripts/SPapp.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\routes\IndexRoute.js" Url="Scripts/routes/IndexRoute.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\controllers\MeetupModalController.js" Url="Scripts/controllers/MeetupModalController.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
