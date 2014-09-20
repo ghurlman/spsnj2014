@@ -45,3 +45,14 @@ MeetupSP.MyModalComponent = Ember.Component.extend({
     }.bind(this));
   }.on('didInsertElement')
 });
+
+function getQueryStringParameter(param) {
+  var params = document.URL.split("?")[1].split("&");
+  var strParams = "";
+  for (var i = 0; i < params.length; i = i + 1) {
+    var singleParam = params[i].split("=");
+    if (singleParam[0] == param) {
+      return singleParam[1];
+    }
+  }
+}
